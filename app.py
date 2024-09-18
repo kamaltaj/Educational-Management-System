@@ -75,6 +75,7 @@ class sql:
 
 
     def create_login_credentials_table():
+        connection=None
 
         try:
             connection = psycopg2.connect(host=os.getenv('HOST'),
